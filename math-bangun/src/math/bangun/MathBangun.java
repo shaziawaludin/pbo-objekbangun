@@ -1,21 +1,22 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package math.bangun;
 
-/**
- *
- * @author shazi awaludin
- */
+import bidang2d.Lingkaran;
+import ruang3d.*;
+
+
+
 public class MathBangun {
 
-    /**
-     * @param args the command line arguments
-     */
     public static void main(String[] args) {
-        // TODO code application logic here
+       Lingkaran ling = new Lingkaran();
+       Bola bola = new Bola();
+       TemberengBola temBol = new TemberengBola();
+        System.out.println(ling.luas);
+        System.out.println(bola.luas);
+        System.out.println(bola.volume);
+        System.out.println(temBol.luas);
+        System.out.println(temBol.volume1);
+        System.out.println(temBol.volume2);
     }
     
 }
