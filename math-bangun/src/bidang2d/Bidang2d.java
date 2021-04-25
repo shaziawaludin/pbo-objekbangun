@@ -10,5 +10,12 @@ package bidang2d;
  * @author shazi awaludin
  */
 public interface Bidang2d {
+    final double R = 10;
+    
+    
+    double hitungLuass();
+
+    double hitungVolume();
+
     
 }

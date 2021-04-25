@@ -10,5 +10,24 @@ import bidang2d.Lingkaran;
  * @author shazi awaludin
  */
 public class Bola extends Lingkaran implements Ruang3d{
+    public double luas;
+    public double volume;
+    
+    public Bola(){
+        this.luas = hitungLuas();
+        this.volume = hitungVolume();
+    }
+
+    @Override
+    public double hitungLuas() {
+        return (4) * super.luas;
+    }
+
+    @Override
+    public double hitungVolume() {
+       return (4/3) * super.luas * Bola.R;
+    }
+    
+    
     
 }
