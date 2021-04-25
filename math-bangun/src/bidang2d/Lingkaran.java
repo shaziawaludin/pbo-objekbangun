@@ -11,9 +11,11 @@ package bidang2d;
  */
 public class Lingkaran implements Bidang2d{
     public double luas ;
+    public double keliling; 
     
     public Lingkaran(){
         this.luas = hitungLuass();
+        this.keliling = hitungKeliling();
     }
 
     @Override
