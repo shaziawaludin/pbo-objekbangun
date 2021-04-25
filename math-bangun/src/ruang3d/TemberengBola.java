@@ -10,8 +10,8 @@ package ruang3d;
  * @author shazi awaludin
  */
 public class TemberengBola extends Bola{
-    private final double rDasar = 10;
-    private final double rAtas = 10;
+    private final double rDasar = 4;
+    private final double rAtas = 7;
     public double luas;
     public double volume1;
     public double volume2;
@@ -31,10 +31,10 @@ public class TemberengBola extends Bola{
 
     @Override
     public double hitungVolume() {
-       return (1/6) * Math.PI * TemberengBola.TINGGI * (Math.pow(this.rDasar, 2) + Math.pow(this.rAtas, 2) + Math.pow(TemberengBola.TINGGI, 2));
+       return (1/6.0) * Math.PI * TemberengBola.TINGGI * (Math.pow(this.rDasar, 2) + Math.pow(this.rAtas, 2) + Math.pow(TemberengBola.TINGGI, 2));
     }
     
     public double hitungVolume2() {
-       return (1/3) * Math.PI * Math.pow(TemberengBola.TINGGI, 2)*(TemberengBola.R*3 - TemberengBola.TINGGI);
+       return (1/3.0) * Math.PI * Math.pow(TemberengBola.TINGGI, 2)*(TemberengBola.R*3 - TemberengBola.TINGGI);
     }
 }

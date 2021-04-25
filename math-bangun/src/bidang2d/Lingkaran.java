@@ -22,8 +22,9 @@ public class Lingkaran implements Bidang2d{
     }
 
     @Override
-    public double hitungVolume() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    public double hitungKeliling() {
+        return 2.0*Math.PI*this.R;
+//        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
     
     

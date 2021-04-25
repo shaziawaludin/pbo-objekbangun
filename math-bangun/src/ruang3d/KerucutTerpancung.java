@@ -10,5 +10,8 @@ package ruang3d;
  * @author shazi awaludin
  */
 public class KerucutTerpancung extends Kerucut{
-    
+
+    public KerucutTerpancung() {
+        super(0);
+    }
 }

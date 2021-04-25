@@ -15,7 +15,7 @@ public interface Bidang2d {
     
     double hitungLuass();
 
-    double hitungVolume();
+    double hitungKeliling();
 
     
 }
