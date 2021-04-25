@@ -12,15 +12,18 @@ import bidang2d.Lingkaran;
  * @author shazi awaludin
  */
 public class Tabung extends Lingkaran implements Ruang3d{
-
+    public double luas;
+    public double volume;
+    
     @Override
     public double hitungLuas() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        double luasSelimut = super.keliling * Tabung.TINGGI;
+        return 2*super.luas+luasSelimut;
     }
 
     @Override
     public double hitungVolume() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        return super.luas * Tabung.TINGGI;
     }
     
 }
