@@ -12,9 +12,8 @@ import bidang2d.Lingkaran;
  * @author shazi awaludin
  */
 public class Kerucut extends Lingkaran implements Ruang3d{
-
     private final double tinggi;
-    
+    public double r = super.R;
     public Kerucut(double tinggi){
         this.tinggi = tinggi;
     }
