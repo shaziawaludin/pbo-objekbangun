@@ -4,8 +4,8 @@ public interface Ruang3d {
 
     final double TINGGI = 10;
 
-    double hitungLuas();
+    public double hitungLuas();
 
-    double hitungVolume();
+    public double hitungVolume();
 
 }

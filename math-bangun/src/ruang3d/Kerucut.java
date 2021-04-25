@@ -13,14 +13,25 @@ import bidang2d.Lingkaran;
  */
 public class Kerucut extends Lingkaran implements Ruang3d{
 
+    private final double tinggi;
+    
+    public Kerucut(double tinggi){
+        this.tinggi = tinggi;
+    }
+    
     @Override
     public double hitungLuas() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        return super.hitungLuass() 
+                + ((Math.sqrt((Math.pow(Lingkaran.R,2)
+                        +Math.pow(this.tinggi,2))))
+                *Lingkaran.R*Math.PI);
+        //throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
     @Override
     public double hitungVolume() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        return (1/3.0) * Math.PI*Lingkaran.R*Lingkaran.R*this.tinggi;
+//        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
     
 }
